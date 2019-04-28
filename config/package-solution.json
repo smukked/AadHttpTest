@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "aad-http-test-client-side-solution",
+    "id": "d7d6a2c2-7a13-40d1-9228-3a4486ef697b",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "euw-cowiUserManagement-dev",
+        "scope": "user_impersonation"
+      },
+      {
+        "resource": "euw-cowiProjectOverview-dev",
+        "scope": "user_impersonation"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/aad-http-test.sppkg"
+  }
+}
